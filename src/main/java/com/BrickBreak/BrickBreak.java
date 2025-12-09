@@ -124,7 +124,7 @@ public class BrickBreak extends JPanel implements KeyListener, ActionListener {
 	private void checkCollision() {
 
 		Rectangle ballHitBox = new Rectangle(ball.getXpos(), ball.getYpos(), ball.getSize(), ball.getSize());
-		Rectangle playerHitBox = new Rectangle(player.getX(), player.getY(), player.getWidth(), player.getHeight());
+	Rectangle playerHitBox = new Rectangle(player.getX(), player.getY(), player.getWidth(), player.getHeight());
 		
 		// paddle collision
 		if (ballHitBox.intersects(playerHitBox)) {
